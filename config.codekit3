@@ -40,15 +40,23 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/logo-reveal.svg" : {
+    "\/design\/Group 15.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/design\/logo-reveal.svg",
+      "oAP" : "\/design\/Group 15.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/dev\/content\/logo.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/logo.html",
+      "oF" : 0
     },
     "\/dev\/content\/logo.kit" : {
       "cB" : 0,
