@@ -6,39 +6,40 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 gsap.registerPlugin(MotionPathPlugin);
 
 //INIT
-gsap.set("#bottom-1", {autoAlpha:0});
+gsap.set("#text-path", {autoAlpha:0});
 
-function blockAni(){
+function textAni(){
 
     let tl = gsap.timeline();
 
-    tl.to("#bottom-1", {duration:2, ease:"bounce"})
-    .to("#left-1", {duration:2, y:"-=500", ease:"bounce"})
-    .to("#right-1", {duration:2, y:"-=500", ease:"bounce"})
+    tl.from("#logo-text", {duration:2, motionPath:{path:"#text-path",   align:"#text-path"}, ease:"bounce"})
 
     ;
     return tl;
-
 
 }
 
-function lettersAni(){
+function logoAni(){
 
     let tl = gsap.timeline();
 
-    tl.to("#n", {opacity:0, duration:2, y:100, ease:"bounce"})
-    .to("#left-1", {duration:2, y:"-=500", ease:"bounce"})
-    .to("#right-1", {duration:2, y:"-=500", ease:"bounce"})
+    tl.from("#bottom-1", {duration:2, motionPath:{path:"#b1-path",   align:"#b1-path"}, ease:"bounce"})
+    .from("#left-1", {duration:2, motionPath:{path:"#l1-path", align:"#l1-path"}, ease:"bounce"})
+    .from("#right-1", {duration:2, motionPath:{path:"#r1-path", align:"#r1-path"}, ease:"bounce"})
+    .from("#bottom-2", {duration:2, motionPath:{path:"#b2-path",   align:"#b2-path"}, ease:"bounce"})
+    .from("#left-2", {duration:2, motionPath:{path:"#l2-path",   align:"#l2-path"}, ease:"bounce"})
+    .from("#right-2", {duration:2, motionPath:{path:"#r2-path",   align:"#r2-path"}, ease:"bounce"})
+    .from("#top-2", {duration:2, motionPath:{path:"#t2-path",   align:"#t2-path"}, ease:"bounce"})
+    .from("#top-1", {duration:2, motionPath:{path:"#t1-path",   align:"#t1-path"}, ease:"bounce"})
 
     ;
     return tl;
-
 
 }
 
 
 let mainTl = gsap.timeline();
-mainTl.add(blockAni())
-mainTl.add(lettersAni())
+mainTl.add(textAni())
+mainTl.add(logoAni())
 
 ;
