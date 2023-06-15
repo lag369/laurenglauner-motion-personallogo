@@ -29,10 +29,10 @@
     <rect id="Rectangle 75" width="1440" height="407" fill="white"/>
     <path id="b1-path" d="M718 268V678.5" stroke="none" stroke-width="2"/>
     <path id="r1-path" d="M809 205V620" stroke="none" stroke-width="2"/>
-    <path id="r2-path" d="M625 205V620" stroke="none" stroke-width="2"/>
+    <path id="l1-path" d="M625 205V620" stroke="none" stroke-width="2"/>
     <path id="b2-path" d="M718 215V625" stroke="none" stroke-width="2"/>
     <path id="l2-path" d="M681 173V583" stroke="none" stroke-width="2"/>
-    <path id="r2-path_2" d="M755 173V583" stroke="none" stroke-width="2"/>
+    <path id="r2-path" d="M755 173V583" stroke="none" stroke-width="2"/>
     <path id="t2-path" d="M718 85V495" stroke="none" stroke-width="2"/>
     <path id="t1-path" d="M718 53V463" stroke="none" stroke-width="2"/>
     </g>
